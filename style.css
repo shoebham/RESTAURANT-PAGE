@@ -44,15 +44,23 @@ html
 }
 
 li{
+    cursor: pointer;
     list-style: none;
     float: left;
     margin: 10px;
     padding: 5px 10px 10px 10px;
     border:3px solid black;
+    box-shadow: 2px 3px rgb(8, 8, 8);
 }
 
 li:hover{
+     /* box-shadow: 2px 3px black; */
     background-color: black;
     color:white;
-    box-shadow: 2px 3px white;
+    
+}
+.selected
+{
+    background-color: black;
+    color:white;
 }
