@@ -6,7 +6,7 @@ function header()
     const div2 = divCreate("heading");
     const p = document.createElement("p");
     
-    p.textContent = "Simple Restaurant";
+    p.textContent = "Bit Restaurant";
     div2.appendChild(p);
     div.appendChild(div2);
     div.appendChild(nav());
@@ -39,14 +39,41 @@ function nav()
 
 function li(item){
     const li = document.createElement("li");
+    li.classList.add(item);
     li.appendChild(document.createTextNode(item));
+    li.addEventListener("click",()=>
+    {
+        select(item);
+    });
     return li;
+}
+function select(li)
+{
+    const element = document.querySelector(`.${li}`);
+    element.classList.add("selected");
+    unselect(li);
+}
+
+function unselect(li)
+{
+    const element = document.querySelectorAll("li");
+    element.forEach((e)=>
+    {
+    console.log(e.classList[0]);
+
+        if(e.classList[0]!=li)
+        {
+            e.classList.remove("selected");
+        }
+    });
 }
 function insertContent()
 {
     const content = document.getElementById("content");
     content.appendChild(header());
     content.appendChild(image());
-
+    select("Home");
 }
+
+
 export default insertContent;
