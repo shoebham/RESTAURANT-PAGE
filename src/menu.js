@@ -7,38 +7,38 @@ function image(source)
     img.src=source;
     return img;
 }
-
-function emoji(emo,i)
+function foodlabel(item)
+{
+    const span = document.createElement("span");
+    span.textContent=item;
+    span.classList.add("item");
+    return span;
+}
+function emoji(emo,i,item)
 {
     console.log(i);
     const p = document.createElement("p");
     p.textContent=emo;
     p.classList.add(`food-item-${i}`);
     p.classList.add("food");
+
+    const br = document.createElement("br");
+    p.appendChild(br);
+    p.appendChild(foodlabel(item));
     return p;
 }
 function menuItems()
 {
     const div = document.createElement("div");
     div.classList.add("menu-items");
-    div.appendChild(emoji("🍕",1));
-    div.appendChild(emoji("🥞",2));
-    div.appendChild(emoji("🍔",3));
-    div.appendChild(emoji("🍷", 4));
-    div.appendChild(emoji("🍰",5));
-    div.appendChild(emoji("🍩",6));
-    div.appendChild(emoji("🍣",7));
-    div.appendChild(emoji("🍾",8));
-
-
-    
-
-    // div.appendChild(image("../dist/menu/doughnuts.png"));
-    // div.appendChild(image("../dist/menu/drinks.png"));
-    // div.appendChild(image("../dist/menu/pancake.png"));
-    // div.appendChild(image("../dist/menu/pizza.png"));
-    // div.appendChild(image("../dist/menu/sushi.png"));
-    // div.appendChild(image("../dist/menu/cake.png"));
+    div.appendChild(emoji("🍕",1,"Pizza" ));
+    div.appendChild(emoji("🥞",2,"Doughnut" ));
+    div.appendChild(emoji("🍔",3,"Burger" ));
+    div.appendChild(emoji("🍷", 4,"Wine" ));
+    div.appendChild(emoji("🍰",5,"Cake" ));
+    div.appendChild(emoji("🍩",6,"Pancke" ));
+    div.appendChild(emoji("🍣",7,"Sushi" ));
+    div.appendChild(emoji("🍾",8,"Champagne" ));
     return div;
 }
 
