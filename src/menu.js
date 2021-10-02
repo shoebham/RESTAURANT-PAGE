@@ -27,6 +27,14 @@ function emoji(emo,i,item)
     p.appendChild(foodlabel(item));
     return p;
 }
+function menuText()
+{
+    const p = document.createElement("p");
+    p.classList.add("menu-text");
+    p.textContent="Menu";
+    return p;
+
+}
 function menuItems()
 {
     const div = document.createElement("div");
@@ -47,6 +55,7 @@ function menu()
 {
     const div = document.createElement("div");
     div.classList.add("Menu-div");
+    div.appendChild(menuText());
     div.appendChild(menuItems());
     insertinContent(div);
 }
