@@ -38,7 +38,7 @@ function mapCard()
     const div = document.createElement("div");
     div.classList.add("map-card");
     
-    div.appendChild(map("../dist/map.jpg"));
+    div.appendChild(map("map.jpg"));
     div.appendChild(contactInfo());
     return div;
 }

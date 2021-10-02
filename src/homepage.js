@@ -3,7 +3,7 @@ function image()
 {
     const img = document.createElement("img");
     img.classList.add("home-photo");
-    img.src="../dist/food.jpg";
+    img.src="food.jpg";
     return img;
 }
 
