@@ -14,12 +14,14 @@ function map(source)
 {
     const img = document.createElement("img");
     img.src=source;
+    img.classList.add("map");
     return img;
 }
 
 function address(text)
 {
     const p = document.createElement("p");
+
     p.textContent=text;
     return p;
 }
@@ -35,6 +37,7 @@ function mapCard()
 {
     const div = document.createElement("div");
     div.classList.add("map-card");
+    
     div.appendChild(map("../dist/map.jpg"));
     div.appendChild(contactInfo());
     return div;
@@ -43,6 +46,7 @@ function name()
 {
     const name = document.createElement("input");
     name.placeholder="Name";    
+    name.classList.add("name");
     return name;
 }
 
@@ -50,13 +54,15 @@ function email()
 {
     const email = document.createElement("input");
     email.type="email";
-    email.placeholder="email";
+    email.placeholder="Email";
+    email.classList.add("email");
     return email;
 }
 function query()
 {
     const query = document.createElement("textarea");
     query.placeholder="Your query";
+    query.classList.add("query");
     return query;
 }
 
@@ -64,6 +70,7 @@ function send()
 {
     const button = document.createElement("button");
     button.textContent="✉ Send";
+    button.classList.add("send");
     return button;
 }
 function contactform()

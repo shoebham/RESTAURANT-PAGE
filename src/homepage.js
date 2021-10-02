@@ -11,7 +11,7 @@ function tagline()
 {
     const p = document.createElement("p");
     p.classList.add("tagline");
-    p.textContent="Delicious 8-bit food for your 16-bit tummy";
+    p.textContent="Delicious 8-bit food for your 16-bit tummy🤤🤤";
     return p;
 }
 

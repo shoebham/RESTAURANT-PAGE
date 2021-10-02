@@ -14,6 +14,7 @@ function header()
     const p = document.createElement("p");
     
     p.textContent = "Bit Restaurant";
+    p.classList.add("restaurant-name");
     div2.appendChild(p);
     div.appendChild(div2);
     div.appendChild(nav());
