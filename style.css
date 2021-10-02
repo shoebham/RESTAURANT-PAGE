@@ -74,15 +74,14 @@ p{
     border-radius: 10px;
     text-align: center;
     text-rendering: geometricPrecision;
-    animation: popout 7s;
+    animation: popout 1s;
     box-shadow: 7px 7px rgb(138, 41, 41);
     margin-top:25px;
     /* margin-bottom:30px; */
 }
 .Menu-div
 {
-    animation: fadein 4s;
-
+    animation: fadein 1s;
 }
 .menu-items
 {
@@ -95,6 +94,12 @@ p{
     /* grid-auto-rows: minmax(100px, auto); */
     border:3px solid black;
     box-shadow: 7px 7px 10px rgb(138, 41, 41);
+}
+.food:hover
+{
+    cursor: pointer;
+    box-shadow: 7px 7px 10px 10px rgb(138, 41, 41);
+    
 }
 .item
 {
@@ -110,7 +115,7 @@ p{
 
 @keyframes popout {
     from { box-shadow: none;}
-    to   {     box-shadow: 10px 10px rgb(138, 41, 41);} 
+    to   {         box-shadow: 7px 7px rgb(138, 41, 41);   } 
 }
 
 .menu-text
@@ -123,4 +128,98 @@ p{
     box-shadow: 7px 7px 10px rgb(138, 41, 41);
     border-bottom:none;
 
+}
+.contact-text
+{
+    text-align:center;
+    font-size:48px;
+    padding:0px;
+    margin:0px;
+    border:2px solid black;
+}
+.contact-us
+{
+    float:left;
+}
+.Contact-div
+{
+    animation: fadein 1s;
+    border:2px solid black;
+    box-shadow: 7px 7px 10px rgb(138, 41, 41);
+}
+.contact-form
+{
+    display: flex;
+    flex-direction: column;
+    /* border:none; */
+    padding:20px;
+}
+.name
+{
+    padding-bottom:20px;
+}
+input, textarea
+{
+
+    padding:20px;
+    margin-bottom: 20px;
+    margin-right:20px;
+    width:18rem;
+    background: transparent;
+    border:none;
+    border-bottom: 2px solid black;
+    /* border:7px solid black; */
+    /* border-radius: 20px; */
+    font-size:24px;
+    
+}
+
+::placeholder{
+    color:    black;
+}
+.map-card
+{
+    float:right;
+    
+    border:2px solid black;
+}
+
+.address>p
+{
+    margin-top:5px;
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+.send
+{
+    background: transparent;
+    border:3px solid black;
+    border-radius: 10px;
+    /* box-shadow: 7px 7px 10px rgb(138, 41, 41); */
+    width: fit-content;
+    align-self: center;
+    font-size: 24px;
+    transition:box-shadow 0.1s 0.1s;
+    
+}
+.send:hover{
+    box-shadow: 7px 7px rgb(138, 41, 41);
+    
+    cursor: pointer;
+    /* box-shadow: 7px 7px 10px 10px rgb(138, 41, 41); */
+}
+.tagline
+{
+    width: fit-content;
+    border-bottom: 5px solid black;
+    
+}
+.home-photo
+{
+    margin-left: 50px;
+}
+.restaurant-name
+{
+    width: fit-content;
+    border-bottom: 5px solid black;
 }
