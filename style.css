@@ -94,7 +94,7 @@ p{
     padding-left:30px;
     /* grid-auto-rows: minmax(100px, auto); */
     border:3px solid black;
-    box-shadow: 2px 3px rgb(8, 8, 8);
+    box-shadow: 7px 7px 10px rgb(138, 41, 41);
 }
 .item
 {
@@ -120,5 +120,7 @@ p{
     padding:0px;
     margin:0px;
     border:3px solid black;
-    box-shadow: 2px 3px rgb(8, 8, 8);
+    box-shadow: 7px 7px 10px rgb(138, 41, 41);
+    border-bottom:none;
+
 }
